@@ -1,0 +1,148 @@
+<!--
+
+<div class="w-full  max-w-sm  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+  <a href="#" >
+      <img class="p-3 rounded-t-lg" [src]="product.thumbnail" height="400" width="400"  alt="product image" />
+  </a>
+  <div class="p-2 ">
+      <a href="#">
+          <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{product.title}}</h5>
+      </a>
+      <div class="flex items-center mt-2.5 mb-3">
+          <div class="flex items-center space-x-1 rtl:space-x-reverse">
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+              </svg>
+              <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+              </svg>
+              <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                  <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+              </svg>
+          </div>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+      </div>
+      <div class="flex items-center justify-between p-1">
+          <span class="text-3xl font-bold text-gray-900 dark:text-white">{{product.price | currency:'INR' }}</span>
+          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+      </div>
+  </div>
+</div>
+ -->
+
+
+ <div
+  class="w-full max-w-sm card  bg-[#111] border-2 border-[#fefefe] shadow-[4px_4px_#fefefe] rounded-lg flex flex-col justify-start p-5 gap-2.5 font-sans"
+  (click)="viewProduct(product.id)"
+  >
+  <!-- Card Image -->
+  <div class="card-img transition-all duration-500 flex justify-center">
+    <img
+      [src]="product.thumbnail"
+      alt="Product Image"
+      class="w-full h-auto rounded-lg"
+    />
+  </div>
+
+  <!-- Card Title -->
+  <div class="card-title text-[#fefefe] text-base font-medium ">
+    {{ product.title }}
+  </div>
+
+  <!-- Card Subtitle -->
+  <!-- <div class="card-subtitle text-[#7e7e7e] text-sm font-normal">
+      Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </div> -->
+  <div class="flex items-center mt-2.5 mb-3">
+    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+      @for (star of arr; track star; let i = $index){
+      <ng-container>
+        @if(product.rating >= star){
+        <svg
+          class="w-4 h-4 text-yellow-300"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 22 20"
+        >
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+          />
+        </svg>
+        } @if(product.rating > i && product.rating < star){
+        <svg
+          class="w-4 h-4 text-yellow-300"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 22 20"
+        >
+          <path
+            d="M11 0l2.9 5.875 6.5.95-4.7 4.6 1.1 6.525L11 15.625 4.2 18.95 5.3 12.4l-4.7-4.6 6.5-.95L11 0z"
+          />
+          <path
+            fill="gray"
+            d="M11 0v15.625l6.8 3.325-1.1-6.525 4.7-4.6-6.5-.95L11 0z"
+          />
+        </svg>
+
+        } @if(product.rating < star){
+        <svg
+          class="w-4 h-4 text-gray-200 dark:text-gray-600"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 22 20"
+        >
+          <path
+            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+          />
+        </svg>
+        }
+      </ng-container>
+      }
+    </div>
+    <span
+      class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-3"
+    >
+      {{ product.rating| number : "1.1-1" }}
+    </span>
+  </div>
+
+  <!-- Divider -->
+  <hr class="card-divider border border-[#fefefe] rounded-full" />
+
+  <!-- Card Footer -->
+  <div class="card-footer flex flex-row justify-between items-center">
+    <!-- Price -->
+    <div class="card-price text-[#fefefe] text-xl font-medium">
+       {{product.price | currency:'INR' }}
+    </div>
+
+    <!-- Button -->
+    <button
+      class="card-btn bg-[#111] border-2 border-[#fefefe] rounded-lg p-2 transition-all duration-300 hover:border-[#2d8cf0] active:translate-y-1"
+    >
+      <svg
+        viewBox="0 0 512 512"
+        class="w-6 h-6 fill-[#fefefe] transition-all duration-300 hover:fill-[#2d8cf0]"
+      >
+        <path
+          d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"
+        ></path>
+        <path
+          d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"
+        ></path>
+        <path
+          d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"
+        ></path>
+        <path
+          d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</div>

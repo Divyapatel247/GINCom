@@ -1,0 +1,25 @@
+
+<div class="flex flex-wrap gap-3 p-4 justify-between">
+<ng-container>
+  @for(category of categories; track $index){
+    <!-- <a (click)="getProducts(category.slug)" class="block w-xl p-4 rounded-xl text-center bg-[linear-gradient(to_right,#6d597a,#e56b6f,#b56576)] "> -->
+
+      <a (click)="getProducts(category.slug)" class="block w-xl p-4 text-center hover:bg-[#b56576] border border-gray-200 rounded-lg shadow-sm bg-black ">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white ">
+          {{category.name}}
+        </h5>
+    </a>
+  }
+</ng-container>
+
+
+</div>
+
+
+
+
+
+  <!-- <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
+
+

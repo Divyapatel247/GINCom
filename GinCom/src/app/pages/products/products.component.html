@@ -1,0 +1,10 @@
+
+<div class="flex h-full flex-wrap justify-center  bg-[#ddd8d8]">
+  @if(products){
+    <ng-container>
+      @for (item of products; track $index) {
+        <app-card class="m-2" [product]="item"></app-card>
+      }
+    </ng-container>
+  }
+</div>
