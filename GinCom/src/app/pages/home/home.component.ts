@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [ SliderComponent],
+  imports: [ ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
